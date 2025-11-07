@@ -74,7 +74,7 @@ a.dropdown-item:hover {
 }
 
 .mainLanding {
-  background-image: url("/src/fondo.jpg");
+  background-image: url("src/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
