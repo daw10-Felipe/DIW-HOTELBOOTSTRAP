@@ -1,0 +1,853 @@
+p a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+
+.burgerMovil {
+  width: 40px;
+  height: auto;
+}
+
+.headerMovil {
+  height: 50px;
+}
+
+.burgerMenu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burgerMenu.dropdown-toggle::after {
+  display: none;
+}
+
+.burgerMenu:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  border-radius: 100px;
+}
+
+.logoPC {
+  width: 60px;
+  height: auto;
+  border-radius: 100px;
+}
+
+.enlacesHeaderPC a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.enlacesHeaderPC a:hover {
+  color: #e04f67;
+}
+
+a.dropdown-item {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  margin-top: 6px;
+}
+
+a.dropdown-item:hover {
+  background-color: black;
+  color: #e04f67;
+  border-radius: 50px;
+}
+
+.dropdown-menu.dropdown-menu-right.show {
+  background-color: transparent;
+  border: 0;
+}
+
+.mainLanding {
+  background-image: url("/src/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0 !important;
+  height: 70em !important; /* Ajustado para el título */
+  display: flex; /* Asegura flexbox para centrado */
+  flex-direction: column; /* Apila elementos verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  position: relative; /* Necesario para posicionar el fondo */
+}
+
+/* Oscurecer el fondo para que el texto sea más legible */
+.mainLanding::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Capa oscura */
+  z-index: 1; /* Asegura que esté detrás del contenido */
+}
+
+.hero-text {
+  z-index: 2; /* Para que el texto esté sobre la capa oscura */
+  color: white; /* Color de texto para el título */
+}
+
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem; /* Tamaño del título */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; /* Tamaño del subtítulo */
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+.CondicionesLanding {
+  margin-top: 1.5rem;
+  z-index: 2; /* Para que esté sobre la capa oscura */
+}
+
+.CondicionesLanding a {
+  color: white;
+}
+
+.carrusel {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.carrusel-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.carrusel-title span {
+  color: #e04f67;
+}
+
+.carrusel-subtitle {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.promo-card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin: 0 10px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.promo-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.promo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: black;
+  line-height: 1.3;
+}
+
+.promo-text .highlight {
+  color: #e04f67;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 30px;
+  height: 30px;
+  background-size: 100%, 100%;
+}
+
+.carousel-control-prev-icon::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M5.25 0L4 1.25 6.75 4 4 6.75 5.25 8l4-4-4-4z" fill="%23000"/></svg>');
+  transform: rotate(180deg);
+  display: block;
+}
+
+.carousel-control-next-icon::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M5.25 0L4 1.25 6.75 4 4 6.75 5.25 8l4-4-4-4z" fill="%23000"/></svg>');
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+  opacity: 1;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.desktop-grid-container {
+  gap: 20px;
+}
+
+.btn-condiciones {
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-condiciones:hover {
+  background-color: #333;
+}
+
+.btn-condiciones a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-condiciones a span {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .carrusel-title {
+    font-size: 3.5rem;
+  }
+
+  .promo-card {
+    width: 260px;
+  }
+}
+
+.ventajasHotel {
+  background-color: black;
+}
+
+.ventajasHotel h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.ventajasHotel p {
+  color: white;
+}
+
+.ventajas-grid {
+  padding-top: 2rem;
+}
+
+.ventaja-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ventaja-card-icon {
+  width: 330px;
+  height: 300px;
+  margin-bottom: 1rem;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.ventaja-card p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.ventaja-card p .highlight-pink {
+  color: #e04f67;
+}
+
+.promo-icon {
+  max-height: 150px;
+}
+
+promo-card {
+  max-height: 200px;
+}
+
+.BotonVerMas button {
+  border-radius: 100px;
+  background-color: transparent;
+  height: 3rem;
+  width: 14rem;
+  border: #ffffff 2px solid;
+}
+
+.BotonVerMas button a span {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.containerCuadradosVerMas {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.containerCuadradosVerMas p {
+  color: black;
+}
+
+.footer.bg-dark {
+  background-color: black !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer .card {
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.footer .card-header {
+  background-color: black;
+  border-bottom: none;
+  padding: 0;
+}
+
+.footer .btn-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.footer .btn-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .btn-link:focus {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.footer .btn-link::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer .btn-link[aria-expanded="true"]::after {
+  content: "−";
+}
+
+.footer .card-body {
+  padding: 0 0 1rem 1rem;
+}
+
+.footer .card-body ul {
+  margin-bottom: 0;
+}
+
+.footer .card-body ul li a {
+  color: #ccc;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 0.2rem 0;
+  display: block;
+}
+
+.footer .card-body ul li a:hover {
+  color: white;
+}
+
+.footer .row.d-none.d-md-block h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer .row.d-none.d-md-block ul li a {
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.footer .row.d-none.d-md-block ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.comentarios {
+  background-color: #e0e0e0;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.comentarios .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comentarios-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.comentarios-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.comentarios-title .highlight-pink {
+  color: #e04f67;
+}
+
+.btn-reseñas {
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reseñas:hover {
+  background-color: #333;
+}
+
+.btn-reseñas a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-reseñas a span {
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .comentarios-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.main-disponibilidad {
+  background-color: #f0f2f5;
+  padding: 4rem 0;
+}
+
+.disponibilidad-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  font-size: 2.8rem;
+  color: black;
+}
+
+.form-container {
+  background-color: #212529;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.form-container label {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-container .form-control {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  color: #495057;
+  height: calc(1.5em + 0.75rem + 8px);
+}
+
+.form-container .form-control:focus {
+  border-color: #e04f67;
+  box-shadow: 0 0 0 0.2rem rgba(224, 79, 103, 0.25);
+}
+
+.btn-disponibilidad {
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: b;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  border: 2px solid white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-disponibilidad:hover {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.enlaceDispo {
+  color: black;
+}
+
+.enlaceDispo:hover {
+  color: #e04f67;
+}
+
+.spanDispo {
+  color: #e04f67;
+}
+
+.containerHabitacion {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.centrarContainerHabitacion h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: black;
+  line-height: 1.2;
+}
+
+.imgHabitacion img {
+  height: 90%;
+  width: auto;
+  border-radius: 9px;
+}
+
+.buttonReserva {
+  border-radius: 100px;
+  background-color: black;
+  height: 3rem;
+  width: 9rem;
+  border: #ffffff 3px solid;
+}
+
+.buttonReserva a {
+  color: white;
+}
+
+.buttonReserva a:hover {
+  color: #e04f67;
+}
+
+.buttonInfo {
+  border-radius: 100px;
+  background-color: transparent;
+  height: 3rem;
+  width: 9rem;
+  border: #000000 2px solid;
+}
+
+.buttonInfo a {
+  color: black;
+}
+
+.buttonInfo a:hover {
+  color: black;
+}
+
+.rowInfoHabitaciones {
+  width: 100%;
+  padding: 5%;
+}
+
+.main-reserva {
+  background-color: #f0f2f5;
+  padding: 4rem 0;
+}
+
+.reserva-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  font-size: 2.8rem;
+  color: black;
+}
+
+.form-reserva-container,
+.resumen-reserva-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-reserva-container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-reserva-container label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-reserva-container .form-control {
+  border-radius: 8px;
+}
+
+.form-reserva-container .form-control:focus {
+  border-color: #e04f67;
+  box-shadow: 0 0 0 0.2rem rgba(224, 79, 103, 0.25);
+}
+
+.resumen-reserva-container h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.resumen-reserva-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.resumen-reserva-container .precio-total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #e04f67;
+}
+
+.btn-confirmar {
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  padding: 0.85rem;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-confirmar:hover {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.booking-bar {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 900px; /* Limita el ancho del formulario en pantallas grandes */
+}
+
+.booking-bar form .row {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para que destaque */
+}
+
+.booking-field {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.booking-field label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.booking-field label i {
+  margin-right: 8px;
+  color: #e04f67;
+}
+
+.booking-field .form-control {
+  border: none;
+  box-shadow: none;
+  padding-left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #555;
+  flex: 1;
+  min-width: 80px;
+}
+
+.booking-field .form-control::placeholder {
+  color: #aaa;
+}
+
+.booking-field .form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.booking-field select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent
+    url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>')
+    no-repeat right 5px center;
+  background-size: 20px;
+  padding-right: 30px;
+}
+
+.btn-booking {
+  width: 100%;
+  height: 100%;
+  background-color: #e04f67;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  padding: 15px;
+  padding: .375rem .15rem !important;
+}
+
+.btn-booking:hover {
+  background-color: #c9465c;
+  color: white;
+}
+
+.booking-button-wrapper {
+  padding: 0 !important; /* Quita el padding de la columna */
+}
+
+@media (min-width: 992px) {
+  .booking-field {
+    border-right: 1px solid #e0e0e0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .booking-bar form .row {
+    border-radius: 8px;
+  }
+
+  .booking-field {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .btn-booking {
+    border-radius: 0 0 7px 7px; /* Redondea solo las esquinas inferiores para móvil */
+    margin-top: 1px; /* Pequeño ajuste para asegurar que no haya hueco */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .booking-field {
+    border-right: 0;
+  }
+
+  .col-lg.col-md-6.col-12.booking-field:last-of-type {
+    border-bottom: none;
+  }
+
+  .btn-booking {
+    border-radius: 0 0 7px 7px;
+    width: 100%;
+  }
+}
+a:hover{
+  color: #e04f67 !important;
+}
+.no-gutters>.col, .no-gutters>[class*=col-] {
+    padding-right: 0px !important;
+    padding-left: 6px !important;
+}
